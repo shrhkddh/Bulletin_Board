@@ -5,6 +5,7 @@ class Board(models.Model):
     password    = models.CharField(max_length = 500)
     title       = models.CharField(max_length = 200)
     description = models.CharField(max_length = 5000)
+    user_ip     = models.CharField(max_length = 500)
     updated_at  = models.DateField(auto_now = True)
 
     class Meta:
